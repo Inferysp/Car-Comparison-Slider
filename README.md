@@ -1,2 +1,2 @@
-# Car-Comparison-Slider
-Hybrid and combustion cars technologies and economy comparison.
+# SlidePro
+Page with values comparison function of sliders.
