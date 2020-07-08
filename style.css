@@ -1,6 +1,7 @@
-html, body {
+html,
+body {
   background: yellow;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,10 +12,10 @@ html, body {
 }
 
 .site-container {
-  padding: 20px 20px 20px 20px;
+  padding: 200px 50px 200px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
+  grid-gap: 100px;
   background-image: url(2016-Toyota-Corolla-Hybrid-Toyota-Prius-Hybrid-4.jpg);
   background-position-y: 100%;
   background-size: cover;
@@ -23,17 +24,14 @@ html, body {
   line-height: 0.9em;
 }
 
-/* .header-div-container h1 {
-  font-size: 54px;
-  padding: 0 0 20px 0;
-} */
-
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 .description-div {
-  max-height: 500px;
+  max-height: 800px;
   background: none;
   border: solid 1px rgb(169, 221, 255);
   border-radius: 15px;
@@ -41,11 +39,15 @@ html, body {
 
 #description-combustion,
 #description-hybrid {
-  margin: 2px;
-  padding: 3px 3px 6px 3px;
-  background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
+  margin: 20px;
+  padding: 10px 10px 20px 10px;
+  background: linear-gradient(
+    +135deg,
+    rgba(169, 221, 255, 0.3),
+    rgba(169, 221, 255, 0.9)
+  );
   border: solid 1px rgb(169, 221, 255);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1em;
   min-width: 300px;
 }
@@ -57,30 +59,26 @@ html, body {
 }
 
 .description-div h1 {
-  font-size: 15px;
-  font-style: italic;
+  font-size: 18px;
   color: rgb(169, 221, 255);
-  margin-bottom: 5px;
   padding: 6px 3px 3px 3px;
   border-bottom: solid 4px red;
-  text-shadow: -1px 0 black, 0 1px black,
-      1px 0 black, 0 -1px black;
-  padding: 0 0 2px 2px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .description-div p {
-  color:black;
-  /* padding: 2px; */
+  color: black;
+  padding: 5px;
 }
 
 .description-div a {
-  margin: 0 0 2px 2px ;
+  margin: 0 0 2px 2px;
   font-style: italic;
   color: black;
 }
 
 .slide-container {
-  max-height: 500px;
+  max-height: 800px;
   background: none;
   display: flex;
   justify-content: center;
@@ -91,17 +89,16 @@ html, body {
   border: solid 1px rgb(169, 221, 255);
   border-radius: 15px;
 
-  -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-  -moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-  box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-  }
+  -webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.65);
+}
 
 .header-div-container {
   color: rgb(169, 221, 255);
   margin: 0;
   margin-bottom: 5px;
-  text-shadow: -1px 0 black, 0 1px black,
-      1px 0 black, 0 -1px black
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .header-div-container h1 {
@@ -117,12 +114,17 @@ html, body {
   padding: 10px;
   box-shadow: inset 0 0 12px black;
   height: calc(100vh - 350px);
+  max-height: 450px;
   width: 300px;
 }
 
 .result-container {
   width: 300px;
-  background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
+  background: linear-gradient(
+    +135deg,
+    rgba(169, 221, 255, 0.3),
+    rgba(169, 221, 255, 0.9)
+  );
   border: solid 1px rgb(169, 221, 255);
   /* font-size: 16px; */
   display: flex;
@@ -148,7 +150,7 @@ html, body {
 .copyright-container p {
   font-style: italic;
   color: white;
-  padding:  2px 20px 0 10px;
+  padding: 2px 20px 0 10px;
   font-size: 16px;
 }
 
@@ -170,8 +172,7 @@ html, body {
 h2 {
   font-size: 21px;
   color: red;
-  text-shadow: -1px 0 black, 0 1px black,
-  1px 0 black, 0 -1px black
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 label {
   font-size: 13px;
@@ -180,7 +181,7 @@ label {
 .town-travel,
 .long-distance {
   margin-top: 2px;
-  font-size: 16px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   margin-left: calc(50% - 30px);
@@ -189,7 +190,7 @@ label {
   background: white;
   box-shadow: inset 4px 0px 4px;
   border: solid 0.5px red;
-  padding-left: 2px;
+  padding-left: 10px;
 }
 
 .result-compare-container {
@@ -202,8 +203,7 @@ label {
   padding: 0 1px 0 1px;
   color: red;
   font-weight: bold;
-  text-shadow: -1px 0 black, 0 1px black,
-  1px 0 black, 0 -1px black
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* Galaxy S9  */
@@ -220,7 +220,7 @@ label {
   .slide-container {
     background-position-x: 600px;
     background-size: 870px;
-  } 
+  }
 }
 
 /* iPhone 6/7/8 Plus iOS 11  */
@@ -228,7 +228,7 @@ label {
   .slide-container {
     background-position-x: 700px;
     background-size: 870px;
-  } 
+  }
 }
 
 /* Galaxy S9 horizontal */
@@ -236,7 +236,7 @@ label {
   .slide-container {
     background-position-x: 750px;
     background-size: 900px;
-  } 
+  }
 }
 
 /* Iphone 6/7/8 iOS 11 horizontal */
@@ -244,7 +244,7 @@ label {
   .slide-container {
     background-position-x: 800px;
     background-size: 950px;
-  } 
+  }
 }
 
 /* iPhone 6/7/8 Plus iOS 11 horizontal */
@@ -252,7 +252,7 @@ label {
   .slide-container {
     background-position-x: 1000px;
     background-size: 1000px;
-  } 
+  }
 }
 
 /* iPhone X/XS iOS 12 horizontal */
@@ -260,10 +260,10 @@ label {
   .slide-container {
     background-position-x: 1100px;
     background-size: 1100px;
-  } 
+  }
 }
 
-/* iPad */
+/* iPad horizontal*/
 @media (max-width: 1024px) {
   .slide-container {
     background-position-x: 1200px;
@@ -271,7 +271,7 @@ label {
   }
 }
 
-/* Kindle Fire HDX Linux */
+/* Kindle Fire HDX Linux horizontal*/
 @media (max-width: 1280px) {
   .site-container {
     padding: 0;
@@ -284,13 +284,12 @@ label {
     background-size: 1200px;
     background-position-y: unset;
     height: unset;
-    /* font-size: 25px; */
     line-height: 0.9em;
   }
   .slide-container {
     order: -1;
     padding: 5px;
-    margin: 2px
+    margin: 2px;
   }
   .description-div {
     max-height: 1100px;
@@ -333,7 +332,6 @@ label {
   .result-container {
     width: calc(100% - 30px);
     max-width: 450px;
-    /* min-width: 0 !important; */
     font-size: 15px;
     padding: 0;
     margin-top: 5px;
@@ -344,7 +342,6 @@ label {
   }
   .town-driving-box,
   .long-distance-driving-box {
-    min-width: 100px;
     max-width: 200px;
     margin: 0 0 0 calc(50% - 100px);
   }
@@ -365,193 +362,58 @@ label {
   }
 }
 
-@media (min-width: 1280px) {
-}
-
 @media (min-width: 1920px) {
-  site-container {
+  .site-container {
     padding: 100px 50px 100px 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5em;
-    background-image: url(2016-Toyota-Corolla-Hybrid-Toyota-Prius-Hybrid-4.jpg);
-    background-position-y: 100%;
-    background-size: cover;
-    height: calc(100vh - 70px);
-    font-size: 25px;
-    line-height: 0.9em;
+    grid-gap: 100px;
   }
-  
-  *, ::after, ::before {
-    box-sizing: border-box;
-  }
-  
   .description-div {
-    max-height: 1300px;
-    background: none;
-    border: solid 1px rgb(169, 221, 255);
-    border-radius: 15px;
+    max-height: 1000px;
   }
-  
   #description-combustion,
   #description-hybrid {
-    margin: 10px;
+    margin: 20px;
     padding: 10px 10px 20px 10px;
-    background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
-    border: solid 1px rgb(169, 221, 255);
-    font-size: 35px;
-    line-height: 1em;
-    min-width: 600px;
+    font-size: 24px;
+    min-width: 500px;
   }
-  
-  .description-div img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
   .description-div h1 {
-    font-size: 50px;
-    color: rgb(169, 221, 255);
-    margin-bottom: 5px;
-    padding: 6px 3px 3px 3px;
-    border-bottom: solid 4px red;
-    text-shadow: -1px 0 black, 0 1px black,
-        1px 0 black, 0 -1px black;
-    padding: 0 0 20px 20px;
-  }
-  
-  .description-div p {
-    color:black;
-    padding: 20px;
-  }
-  
-  .description-div a {
-    margin: 0 0 5px 5px ;
-    font-style: italic;
-    color: black;
-  }
-  
-  .slide-container {
-    max-height: 1300px;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-  
-    border: solid 1px rgb(169, 221, 255);
-    border-radius: 15px;
-  
-    -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-    -moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-    box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
-    }
-  
-  .header-div-container {
-    color: rgb(169, 221, 255);
-    margin: 0;
-    margin-bottom: 50px;
-    text-shadow: -1px 0 black, 0 1px black,
-        1px 0 black, 0 -1px black
-  }
-  
-  .header-div-container h1 {
-    font-size: 55px;
-  }
-  
-  .slide-main-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(169, 221, 255, 0.5);
-    border: solid 1px rgb(169, 221, 255);
-    padding: 20px;
-    box-shadow: inset 0 0 12px black;
-    height: calc(100vh - 1000px);
-    width: 600px;
-  }
-  
-  .result-container {
-    width: 600px;
-    background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
-    border: solid 1px rgb(169, 221, 255);
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-  }
-  
-  .copyright-container {
-    position: relative;
-    bottom: 0;
-    background: rgb(16, 17, 17);
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 0 0 12px;
-  }
-  
-  .copyright-container p {
-    font-style: italic;
-    color: white;
-    padding:  2px 20px 0 10px;
     font-size: 23px;
+    padding: 6px 3px 10px 3px;
   }
-  
-  .copyright-container img {
-    height: 45px;
-    min-width: 45px;
-    border-radius: 100%;
-    margin: 10px 0 0 7px; 
+  .description-div p {
+    padding: 10px;
   }
-  
+  .slide-container {
+    max-height: 1000px;
+  }
+  .header-div-container {
+    margin-bottom: 50px;
+  }
+  .header-div-container h1 {
+    font-size: 40px;
+  }
+  .slide-main-box {
+    height: calc(100vh - 350px);
+    max-height: 550px;
+    width: 450px;
+  }
+  .result-container {
+    width: 450px;
+    font-size: 25px;
+  }
   .town-driving-box,
   .long-distance-driving-box {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin: 35px;
+    max-width: 300px;
+    margin: 0 0 0 calc(50% - 150px);
   }
-  
-  h2 {
-    color: red;
-    text-shadow: -1px 0 black, 0 1px black,
-    1px 0 black, 0 -1px black
-  }
-  
   .town-travel,
   .long-distance {
     margin-top: 20px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
+    font-size: 23px;
     margin-left: calc(50% - 60px);
     width: 120px;
     height: 60px;
-    background: white;
-    box-shadow: inset 4px 0px 4px;
-    border: solid 0.5px red;
     padding-left: 20px;
-  }
-  
-  .result-compare-container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .compare-result,
-  .economy-result {
-    padding: 0 3px 0 3px;
-    color: red;
-    font-weight: bold;
-    text-shadow: -1px 0 black, 0 1px black,
-    1px 0 black, 0 -1px black
   }
 }
