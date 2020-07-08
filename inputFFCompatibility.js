@@ -1,0 +1,1 @@
+$('input,textarea').attr('autocomplete', 'off');

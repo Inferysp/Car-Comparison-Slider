@@ -1,52 +1,94 @@
-body, html {
-  background: rgb(14, 77, 217);
+html, body {
+  background: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0;
+  line-height: 1.4em;
+  text-decoration: none;
+  outline: 0;
+  width: 100%;
+}
+
+.site-container {
+  padding: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  background-image: url(2016-Toyota-Corolla-Hybrid-Toyota-Prius-Hybrid-4.jpg);
+  background-position-y: 100%;
+  background-size: cover;
+  height: calc(100vh - 70px);
+  font-size: 18px;
+  line-height: 0.9em;
+}
+
+/* .header-div-container h1 {
+  font-size: 54px;
+  padding: 0 0 20px 0;
+} */
+
+*, ::after, ::before {
+  box-sizing: border-box;
 }
 
 .description-div {
-  background: linear-gradient(-45deg, rgba(169, 221, 255, 0.67), rgba(169, 221, 255, 0.99));
-  margin-top: 100px;
-  margin-bottom: 50px;
-  width: 80%;
-  border: solid 1px black;
+  max-height: 500px;
+  background: none;
+  border: solid 1px rgb(169, 221, 255);
   border-radius: 15px;
 }
 
+#description-combustion,
+#description-hybrid {
+  margin: 2px;
+  padding: 3px 3px 6px 3px;
+  background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
+  border: solid 1px rgb(169, 221, 255);
+  font-size: 14px;
+  line-height: 1em;
+  min-width: 300px;
+}
+
+.description-div img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .description-div h1 {
-  margin-top: 40px;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(169, 221, 255);
   margin-bottom: 5px;
   padding: 6px 3px 3px 3px;
-  font-size: 20px;
   border-bottom: solid 4px red;
-  box-shadow: 0px 15px 12px black;
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+  padding: 0 0 2px 2px;
 }
 
 .description-div p {
-  margin-top: 20px;
-  margin-bottom: 5px;
-  padding: 12px;
-  font-size: 20px;
+  color:black;
+  /* padding: 2px; */
 }
 
 .description-div a {
-  font-size: 12px;
-  right: 10px;
-  padding-left: 25px;
+  margin: 0 0 2px 2px ;
   font-style: italic;
+  color: black;
 }
 
 .slide-container {
-  margin-top: 100px;
-  min-width: 370px;
+  max-height: 500px;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 6px 0 6px 0;
+  padding: 2px;
 
-  border: solid 1px black;
+  border: solid 1px rgb(169, 221, 255);
   border-radius: 15px;
 
   -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
@@ -55,90 +97,99 @@ body, html {
   }
 
 .header-div-container {
-  color: rgb(14, 77, 217);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 12px;
+  color: rgb(169, 221, 255);
   margin: 0;
-  background: linear-gradient(-45deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
-  font-size: 16px;
-  margin-bottom: 40px;
-  border-radius: 30px; 
-  border: solid 1px black;
-}
-
-.header-div-container:hover {
-  background: linear-gradient(-45deg, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.9));
+  margin-bottom: 5px;
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black
 }
 
 .header-div-container h1 {
-  text-shadow: -2px 0 black;
+  font-size: 29px;
 }
 
 .slide-main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(169, 221, 255, 0.5);
-  border: solid 1px black;
-  padding: 20px;
+  border: solid 1px rgb(169, 221, 255);
+  padding: 10px;
   box-shadow: inset 0 0 12px black;
-  margin-bottom: 40px;
-  width: 70%;
+  height: calc(100vh - 350px);
+  width: 300px;
 }
 
 .result-container {
-  min-width: 300px;
+  width: 300px;
   background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
-  border: solid 1px black;
-  border-radius: 15px;
+  border: solid 1px rgb(169, 221, 255);
+  /* font-size: 16px; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 .copyright-container {
-  bottom: 0;
-  width: 100%;
   position: relative;
+  bottom: 0;
+  background: rgb(16, 17, 17);
+  width: 100%;
+  height: 70px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 0 0 0 12px;
 }
 
 .copyright-container p {
-  color: rgb(169, 221, 255);
-  text-shadow: -2px 0 rgba(255, 0, 0, 0.9);
-  padding:  0 20px 0 10px;
+  font-style: italic;
+  color: white;
+  padding:  2px 20px 0 10px;
+  font-size: 16px;
 }
 
 .copyright-container img {
-  height: 50px;
-  min-width: 50px;
+  height: 45px;
+  min-width: 45px;
   border-radius: 100%;
-  border: solid 1px red;
-  margin: 6px 0 0 5px;
-}
-
-.town-driving-box {
-  margin-bottom: 30px;
+  margin: 10px 0 0 7px;
 }
 
 .town-driving-box,
 .long-distance-driving-box {
+  max-width: 400px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  /* margin: 35px; */
+}
+
+h2 {
+  font-size: 21px;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black,
+  1px 0 black, 0 -1px black
+}
+label {
+  font-size: 13px;
 }
 
 .town-travel,
 .long-distance {
-  min-width: 60px;
+  margin-top: 2px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: calc(50% - 30px);
+  width: 60px;
   height: 30px;
-  margin-top: 10px;
   background: white;
   box-shadow: inset 4px 0px 4px;
   border: solid 0.5px red;
-  padding: 10px 20px 0 20px;
+  padding-left: 2px;
 }
 
 .result-compare-container {
@@ -148,86 +199,359 @@ body, html {
 
 .compare-result,
 .economy-result {
+  padding: 0 1px 0 1px;
   color: red;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black,
+  1px 0 black, 0 -1px black
 }
 
-@media (min-width: 1925px) {
+/* Galaxy S9  */
+@media (max-width: 360px) {
   .site-container {
-    height: 100%;
-    padding: 0 50px 0 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    background-image: url(highway-1031149_1920.jpg);
-    min-height: calc(100vh - 52px);
-    background-size: 100%;
+    background-position-x: 600px;
+    background-size: 870px;
   }
-  .slide-main-box {
-    width: 450px;
-  }
-  .descripion-div {
-    max-width: 90%;
-  }
+}
+
+/* iPhone 6/7/8 iOS 11 */
+/* iPhone 6/7/8 Plus iOS 11, iPhone X/XS iOS 12 */
+@media (max-width: 375px) {
   .slide-container {
-    max-width: 90%;
-  }
-  .copyright-container p {
-      margin-top: 320px;
-  }
-  .copyright-container img {
-    margin-top: 310px;
+    background-position-x: 600px;
+    background-size: 870px;
+  } 
+}
+
+/* iPhone 6/7/8 Plus iOS 11  */
+@media (max-width: 414px) {
+  .slide-container {
+    background-position-x: 700px;
+    background-size: 870px;
+  } 
+}
+
+/* Galaxy S9 horizontal */
+@media (max-width: 740px) {
+  .slide-container {
+    background-position-x: 750px;
+    background-size: 900px;
+  } 
+}
+
+/* Iphone 6/7/8 iOS 11 horizontal */
+@media (max-width: 667px) {
+  .slide-container {
+    background-position-x: 800px;
+    background-size: 950px;
+  } 
+}
+
+/* iPhone 6/7/8 Plus iOS 11 horizontal */
+@media (max-width: 736px) {
+  .slide-container {
+    background-position-x: 1000px;
+    background-size: 1000px;
+  } 
+}
+
+/* iPhone X/XS iOS 12 horizontal */
+@media (max-width: 812px) {
+  .slide-container {
+    background-position-x: 1100px;
+    background-size: 1100px;
+  } 
+}
+
+/* iPad */
+@media (max-width: 1024px) {
+  .slide-container {
+    background-position-x: 1200px;
+    background-size: 1200px;
   }
 }
 
-@media (min-width: 376px) {
+/* Kindle Fire HDX Linux */
+@media (max-width: 1280px) {
   .site-container {
-    padding: 0 50px 0 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    background-image: url(highway-1031149_1920.jpg);
-    height: 100vh;
-    background-position: center;
-  }
-}
-
-@media (max-width: 415px) {
-  .site-container {
+    padding: 0;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    background-image: url(highway-1031149_1920.jpg);
-    background-position: top;
-  }
-  .description-div {
-    min-width: 94%;
-    padding: 5px;
-    margin: 100px 5px 5px 5px;
+    grid-gap: 0;
+    background-image: url(2016-Toyota-Corolla-Hybrid-Toyota-Prius-Hybrid-4.jpg);
+    background-position-x: 1200px;
+    background-size: 1200px;
+    background-position-y: unset;
+    height: unset;
+    /* font-size: 25px; */
+    line-height: 0.9em;
   }
   .slide-container {
     order: -1;
-    max-height: 95vh;
-    margin-top: 6px;
-    min-width: 300px;
-    margin-top: 0px;
-    height: 100vh;
+    padding: 5px;
+    margin: 2px
+  }
+  .description-div {
+    max-height: 1100px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  #description-combustion,
+  #description-hybrid {
     margin: 5px;
+    padding: 5px 5px 10px 5px;
+    font-size: 16px;
+    min-width: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .description-div h1 {
+    font-size: 20px;
+    margin-bottom: 2px;
+    padding: 3px 1.5px 1.5px 1.5px;
+    padding: 0 0 2px 2px;
+  }
+  .description-div p {
+    padding: 2px;
   }
   .header-div-container {
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .header-div-container h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   .slide-main-box {
-    padding: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    box-shadow: inset 0 0 12px black;
+    height: 450px;
+    max-width: 450px;
+    min-width: 250px;
+    width: calc(100% - 30px);
+    padding: 5px;
   }
   .result-container {
-    padding: 0px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+    /* min-width: 0 !important; */
+    font-size: 15px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
+  .copyright-container p {
+    font-size: 20px;
+  }
+  .town-driving-box,
+  .long-distance-driving-box {
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0 0 0 calc(50% - 100px);
+  }
+  h2 {
+    font-size: 21px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .town-travel,
+  .long-distance {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: calc(50% - 30px);
+    width: 60px;
+    height: 30px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1920px) {
+  site-container {
+    padding: 100px 50px 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    background-image: url(2016-Toyota-Corolla-Hybrid-Toyota-Prius-Hybrid-4.jpg);
+    background-position-y: 100%;
+    background-size: cover;
+    height: calc(100vh - 70px);
+    font-size: 25px;
+    line-height: 0.9em;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  .description-div {
+    max-height: 1300px;
+    background: none;
+    border: solid 1px rgb(169, 221, 255);
+    border-radius: 15px;
+  }
+  
+  #description-combustion,
+  #description-hybrid {
+    margin: 10px;
+    padding: 10px 10px 20px 10px;
+    background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
+    border: solid 1px rgb(169, 221, 255);
+    font-size: 35px;
+    line-height: 1em;
+    min-width: 600px;
+  }
+  
+  .description-div img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .description-div h1 {
+    font-size: 50px;
+    color: rgb(169, 221, 255);
+    margin-bottom: 5px;
+    padding: 6px 3px 3px 3px;
+    border-bottom: solid 4px red;
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+    padding: 0 0 20px 20px;
+  }
+  
+  .description-div p {
+    color:black;
+    padding: 20px;
+  }
+  
+  .description-div a {
+    margin: 0 0 5px 5px ;
+    font-style: italic;
+    color: black;
+  }
+  
+  .slide-container {
+    max-height: 1300px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  
+    border: solid 1px rgb(169, 221, 255);
+    border-radius: 15px;
+  
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.65);
+    }
+  
+  .header-div-container {
+    color: rgb(169, 221, 255);
+    margin: 0;
+    margin-bottom: 50px;
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black
+  }
+  
+  .header-div-container h1 {
+    font-size: 55px;
+  }
+  
+  .slide-main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(169, 221, 255, 0.5);
+    border: solid 1px rgb(169, 221, 255);
+    padding: 20px;
+    box-shadow: inset 0 0 12px black;
+    height: calc(100vh - 1000px);
+    width: 600px;
+  }
+  
+  .result-container {
+    width: 600px;
+    background: linear-gradient(+135deg, rgba(169, 221, 255, 0.3), rgba(169, 221, 255, 0.9));
+    border: solid 1px rgb(169, 221, 255);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  
   .copyright-container {
-    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    background: rgb(16, 17, 17);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 0 12px;
+  }
+  
+  .copyright-container p {
+    font-style: italic;
+    color: white;
+    padding:  2px 20px 0 10px;
+    font-size: 23px;
+  }
+  
+  .copyright-container img {
+    height: 45px;
+    min-width: 45px;
+    border-radius: 100%;
+    margin: 10px 0 0 7px; 
+  }
+  
+  .town-driving-box,
+  .long-distance-driving-box {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+  }
+  
+  h2 {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black
+  }
+  
+  .town-travel,
+  .long-distance {
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: calc(50% - 60px);
+    width: 120px;
+    height: 60px;
+    background: white;
+    box-shadow: inset 4px 0px 4px;
+    border: solid 0.5px red;
+    padding-left: 20px;
+  }
+  
+  .result-compare-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .compare-result,
+  .economy-result {
+    padding: 0 3px 0 3px;
+    color: red;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black
   }
 }

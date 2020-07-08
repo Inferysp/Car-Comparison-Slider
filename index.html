@@ -1,39 +1,47 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cars technologies and economy comparision</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
+    <script src="jquery-3.5.1.min.js"></script>
   </head>
   <body>
     <div class="site-container">
       <div class="description-div">
+        <img src="Avalon_TRD_004_AFCB4468EDC859FE65BC83179C51D255477E49AB-1500x1000.jpg">
         <h1>Co to jest hybryda?</h1>
-        <p>Pełen napęd hybrydowy Toyoty składa się z trzech połączonych ze sobą 
-          urządzeń: silnika benzynowego, silnika elektrycznego i akumulatora hybrydowego. 
-          Kluczem tej współpracy jest zoptymalizowany przepływ energii między nimi. Silnik 
-          elektryczny odzyskuje energię z hamowania, natomiast podczas jazdy ze stałą prędkością 
-          przekazuje jej nadwyżki do akumulatora hybrydowego, by powtórnie ją wykorzystać, np. 
-          podczas jazdy w korku. W ten sposób w ogóle nie trzeba ładować akumulatora hybrydowego, 
-          a zużycie paliwa jest ograniczone do minimum.
-        </p>
-        <a href="https://www.toyota.pl/hybrid-innovation/?gclid=Cj0KCQjw6PD3BRDPARIsAN8pHu
-          FWHVj00yiblSygx9aURM4vMUM4p1v8dX84xzr-YQfpMcMGSQ_71yYaAtLhEALw_wcB&gclsrc=aw.ds">
-          Dowiedz się wiecej na stronie Toyoty.
-          </a>
+        <div id="description-hybrid">
+          <p>&nbsp; Pełen napęd hybrydowy Toyoty składa się z trzech połączonych ze sobą 
+            urządzeń: silnika benzynowego, silnika elektrycznego i akumulatora hybrydowego. 
+            Kluczem tej współpracy jest zoptymalizowany przepływ energii między nimi. Silnik 
+            elektryczny odzyskuje energię z hamowania, natomiast podczas jazdy ze stałą prędkością 
+            przekazuje jej nadwyżki do akumulatora hybrydowego, by powtórnie ją wykorzystać, np. 
+            podczas jazdy w korku. W ten sposób w ogóle nie trzeba ładować akumulatora hybrydowego, 
+            a zużycie paliwa jest ograniczone do minimum.
+          </p>
+          <a href="https://www.toyota.pl/hybrid-innovation/?gclid=Cj0KCQjw6PD3BRDPARIsAN8pHu
+            FWHVj00yiblSygx9aURM4vMUM4p1v8dX84xzr-YQfpMcMGSQ_71yYaAtLhEALw_wcB&gclsrc=aw.ds">
+            Dowiedz się wiecej na stronie Toyoty.
+            </a>
+        </div>
       </div>
       <div class="description-div">
+        <img src="Avalon_TRD_004_AFCB4468EDC859FE65BC83179C51D255477E49AB-1500x1000.jpg">
         <h1>Co to jest silnik spalinowy?</h1>
-        <p>Silnik wykorzystujący sprężanie i rozprężanie czynnika termodynamicznego 
-          (gazu) do wytworzenia momentu obrotowego lub siły. Sprężany jest gaz „zimny”, 
-          a rozprężany – „gorący”. Do sprężenia gazu zimnego zużywana jest mniejsza ilość 
-          energii mechanicznej niż uzyskuje się z rozprężania. Z tego powodu energia uzyskana 
-          z rozprężania zużywana jest do sprężania gazu i do napędu dowolnej maszyny. Gorący 
-          gaz uzyskuje się w wyniku spalenia paliwa, stąd nazwa: silnik spalinowy. 
-        </p><br><br>
-        <a href="https://pl.wikipedia.org/wiki/Silnik_spalinowy">Dowiedz się wiecej na Wikipedi</a></div>
+        <div id="description-combustion">
+          <p>&nbsp; Silnik wykorzystujący sprężanie i rozprężanie czynnika termodynamicznego 
+            (gazu) do wytworzenia momentu obrotowego lub siły. Sprężany jest gaz „zimny”, 
+            a rozprężany – „gorący”. Do sprężenia gazu zimnego zużywana jest mniejsza ilość 
+            energii mechanicznej niż uzyskuje się z rozprężania. Z tego powodu energia uzyskana 
+            z rozprężania zużywana jest do sprężania gazu i do napędu dowolnej maszyny. Gorący 
+            gaz uzyskuje się w wyniku spalenia paliwa, stąd nazwa: silnik spalinowy. 
+          </p><br>
+          <a href="https://pl.wikipedia.org/wiki/Silnik_spalinowy">Dowiedz się wiecej na Wikipedi</a>
+        </div>
+      </div>
       <div class="slide-container">
 
         <div class="header-div-container">
@@ -44,29 +52,32 @@
 
           <div class="town-driving-box">
             <h2>Jazda po mieście:</h2>
-            <input type="range" value="500" min="0" max="1000" id="town-driving">
+            <input type="range" name="Town" value="500" min="0" max="1000" id="town-driving" autocomplete="off">
+            <label for="Town">Ustaw ilość kilometrów przejechanych w mieście.</label>
             <div class="town-travel"><p></p></div>
           </div>
 
           <div class="long-distance-driving-box">
-              <h2>Jazda w trasy:</h2>
-              <input type="range" value="500" min="0" max="1000" id="long-distance-driving">
-              <div class="long-distance"><p></p></div>
+            <h2>Jazda w trasy:</h2>
+            <input type="range" name="Travel" value="500" min="0" max="1000" id="long-distance-driving" autocomplete="off">
+            <label for="Travel">Ustaw ilość kilometrów przejechanych poza miastem.</label>
+            <div class="long-distance"><p></p></div>
           </div>
         </div>
 
         <div class="result-container">
           <div class="result-compare-container">
-            <p>Opłaca się:</p><p class="compare-result"></p>
+            <p>Opłaca się: </p><p class="compare-result"></p>
           </div>
           <div class="result-compare-container">
-            <p>Zaoszczędzisz:</p><p class="economy-result"></p><p>zł</p>
+            <p>Oszczędzasz: </p><p class="economy-result"></p><p> zł</p>
           </div>
         </div>
 
       </div>
-      <div class="copyright-container"><p>&copy; Copyright 2020 Inferysp</p><img src=".\avatar-lizzy.jpg" /></div>
     </div>
+    <div class="copyright-container"><p>&copy; Copyright 2020 Inferysp</p><img src=".\avatar-lizzy.jpg" /></div>
+    <script type="text/javascript" src="inputFFCompatibility.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
