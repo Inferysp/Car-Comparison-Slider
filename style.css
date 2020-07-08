@@ -1,6 +1,5 @@
 html,
 body {
-  background: yellow;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@ body {
 }
 
 .site-container {
-  padding: 200px 50px 200px 50px;
+  padding: 100px 50px 100px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
@@ -102,7 +101,7 @@ body {
 }
 
 .header-div-container h1 {
-  font-size: 29px;
+  font-size: 26px;
 }
 
 .slide-main-box {
@@ -126,7 +125,6 @@ body {
     rgba(169, 221, 255, 0.9)
   );
   border: solid 1px rgb(169, 221, 255);
-  /* font-size: 16px; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,7 +164,6 @@ body {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  /* margin: 35px; */
 }
 
 h2 {
@@ -362,7 +359,7 @@ label {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1950px) {
   .site-container {
     padding: 100px 50px 100px 50px;
     grid-gap: 100px;
