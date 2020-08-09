@@ -1,11 +1,9 @@
 # Car-Comparison-Slider
 
-Technology used:
-  
-  JS, HTML, CSS, RWD
+Compare two types of motors technologies and choose most economical for you. :)
 
-Description:
+https://inferysp.github.io/Car-Comparison-Slider/
 
-  Compare two types of motors technologies and choose most economical for you. :)
+
 
 
