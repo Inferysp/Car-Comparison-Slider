@@ -12,7 +12,7 @@ Sorry for bad design. This is my first attempt to design in css on my own. :P
 * Javascript
 * HTML
 * CSS
-* Responsive Web Design
+* Media query
 
 ## Demo
 https://inferysp.github.io/Car-Comparison-Slider/
