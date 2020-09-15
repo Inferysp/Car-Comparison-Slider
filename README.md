@@ -15,8 +15,9 @@ Sorry for bad design. This is my first attempt to design in css on my own. :P
 * Responsive Web Design
 
 ## Demo
-`https://inferysp.github.io/Car-Comparison-Slider/`
-
+```
+https://inferysp.github.io/Car-Comparison-Slider/
+```
 ## Setup
 To run this project, install it locally using npm:
 
